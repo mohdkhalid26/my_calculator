@@ -1,3 +1,7 @@
+h1 {
+  margin-bottom: 27px;
+  font-family: "Courier New", Courier, monospace;
+}
 .maindiv {
   min-height: 100vh;
   max-height: 100vh;
@@ -39,7 +43,7 @@
   white-space: nowrap;
   overflow-x: scroll;
   cursor: pointer;
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
   /* border: 2px solid; */
   min-width: 205px;

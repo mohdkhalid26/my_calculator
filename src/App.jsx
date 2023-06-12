@@ -46,6 +46,10 @@ function App() {
 
   return (
     <div className="maindiv">
+      <h1>
+        {" "}
+        <u> MY CALCULATOR </u>{" "}
+      </h1>
       <div className="caldiv">
         <Display dis1={dis1} />
         <Buttons onc={onc} clear={clear} sum={sum} allclear={allclear} />
