@@ -20,8 +20,7 @@ function App() {
       charatF === "/" ||
       charatF === "+" ||
       charatF === "-" ||
-      charatF === "*" ||
-      charatF === "0"
+      charatF === "*"
     )
       return;
     if (
@@ -32,8 +31,13 @@ function App() {
       charatL === "*"
     )
       return;
-
+    if (dis1 === "") return;
     setDis1(eval(dis1).toString());
+  };
+
+  const clear = () => {
+    setDis1(dis1.substring(dis1.length - 1, dis1.lastIndexOf(" ")));
+    console.log(dis1);
   };
 
   const allclear = () => {
@@ -44,7 +48,7 @@ function App() {
     <div className="maindiv">
       <div className="caldiv">
         <Display dis1={dis1} />
-        <Buttons onc={onc} sum={sum} allclear={allclear} />
+        <Buttons onc={onc} clear={clear} sum={sum} allclear={allclear} />
       </div>
     </div>
   );

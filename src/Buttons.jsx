@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 
-function Buttons({ onc, sum, allclear }) {
+function Buttons({ onc, sum, allclear, clear }) {
   return (
     <div className="butdiv">
       <input
@@ -10,7 +10,8 @@ function Buttons({ onc, sum, allclear }) {
         onClick={allclear}
         className="btn ac col"
       />
-      <input type="button" value="C" className="btn col" />
+      <input type="button" onClick={clear} value="C" className="btn col" />
+
       <input type="button" value="/" onClick={onc} className="btn col" />
       <input type="button" onClick={onc} value="7" className="btn" />
       <input type="button" onClick={onc} value="8" className="btn" />
